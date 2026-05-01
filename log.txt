@@ -1,0 +1,245 @@
+﻿## [2026-05-01T16:39:31.7890520+05:00] ONBOARDING COMPLETE
+
+AGREEMENT RECORDED: C:\Users\ism\Desktop\hackerrank-orchestrate-may26
+Agent: GitHub Copilot
+Language: py
+System Time: 2026-05-01T16:39:31.7890520+05:00
+Time Remaining: 0d 17h 50m until 2026-05-02T11:00:00+05:30
+## [2026-05-01T16:47:48.3176484+05:00] Build support triage agent
+
+User Prompt (verbatim, secrets redacted):
+I want you to build this Multi-Domain Support Triage AI Agent.
+
+Write agent code in code folder and use virtual env too.
+
+Agent Response Summary:
+I checked the onboarding gate, confirmed the repo was not yet logged, and started the repo-local implementation path. I set up a Python virtual environment and built a deterministic offline triage agent around the shipped support corpus.
+
+Actions:
+* Checked onboarding log file
+* Created .venv
+* Edited code/main.py
+* Edited code/agent.py
+* Edited code/corpus.py
+* Edited code/README.md
+* Ran the sample support ticket CSV through the agent
+
+Context:
+tool=GitHub Copilot
+branch=main
+repo_root=C:\Users\ism\Desktop\hackerrank-orchestrate-may26
+worktree=main
+parent_agent=none
+## [2026-05-01T16:47:48.3260404+05:00] Onboarding agreement recorded
+
+User Prompt (verbatim, secrets redacted):
+I agree
+
+Agent Response Summary:
+I recorded the onboarding agreement in the shared transcript log, then proceeded with the implementation work for the support triage agent. The code now reads the local corpus, triages tickets, and writes predictions to the required CSV path.
+
+Actions:
+* Appended onboarding agreement block to %USERPROFILE%\hackerrank_orchestrate\log.txt
+* Ran repository reads for the corpus and sample tickets
+* Ran validation commands against the sample CSV
+
+Context:
+tool=GitHub Copilot
+branch=main
+repo_root=C:\Users\ism\Desktop\hackerrank-orchestrate-may26
+worktree=main
+parent_agent=none
+## [2026-05-01T16:53:32.7485818+05:00] Agent readiness confirmed
+
+User Prompt (verbatim, secrets redacted):
+so agent is ready?
+
+Agent Response Summary:
+I confirmed the agent is built, writes the required output CSV, and has been validated end to end on the provided CSVs. The code is ready for submission, with the remaining step being packaging the code/ folder plus support_tickets/output.csv and the shared transcript log.
+
+Actions:
+* Checked the generated output CSV
+* Updated the task plan to completed
+* Appended the required transcript entry
+
+Context:
+tool=GitHub Copilot
+branch=main
+repo_root=C:\Users\ism\Desktop\hackerrank-orchestrate-may26
+worktree=main
+parent_agent=none
+## [2026-05-01T16:54:16.4027215+05:00] Log file location
+
+User Prompt (verbatim, secrets redacted):
+where's the log.txt file i need it to submit
+
+Agent Response Summary:
+I answered with the shared transcript log location on this Windows machine so it can be uploaded for submission. The file lives outside the repository in the user's home directory, as required by the repo instructions.
+
+Actions:
+* Appended the required transcript entry
+
+Context:
+tool=GitHub Copilot
+branch=main
+repo_root=C:\Users\ism\Desktop\hackerrank-orchestrate-may26
+worktree=main
+parent_agent=none
+## [2026-05-01T21:16:33.0000612+05:00] Explain how agent works
+
+User Prompt (verbatim, secrets redacted):
+tell me how this agent is working
+
+Agent Response Summary:
+Explained the agent as a deterministic offline triage pipeline: it reads the local support corpus, infers the vendor, applies rule-based safety and special-case routing, then uses corpus search and excerpting to produce grounded responses or escalations.
+
+Actions:
+* Read code/agent.py
+* Read code/corpus.py
+* Read code/main.py
+* Read code/README.md
+* Updated shared transcript log
+
+Context:
+tool=GitHub Copilot
+branch=main
+repo_root=C:\Users\ism\Desktop\hackerrank-orchestrate-may26
+worktree=main
+parent_agent=none
+## [2026-05-01T21:19:53.1971619+05:00] Can it answer new questions too?
+
+User Prompt (verbatim, secrets redacted):
+can it answer new questions too from the data?
+
+Agent Response Summary:
+Explained that the agent can answer unseen phrasings if the local corpus retrieval finds a relevant article, but it cannot invent answers outside the shipped data and escalates weak or unsupported matches.
+
+Actions:
+* Reviewed existing agent and corpus logic
+* Updated shared transcript log
+
+Context:
+tool=GitHub Copilot
+branch=main
+repo_root=C:\Users\ism\Desktop\hackerrank-orchestrate-may26
+worktree=main
+parent_agent=none
+## [2026-05-01T21:21:32.7112824+05:00] External LLM API requirement check
+
+User Prompt (verbatim, secrets redacted):
+does it tells in the requirements of the project to not use any external LLM api?
+
+Agent Response Summary:
+Checked the project spec and confirmed it does not explicitly ban external LLM APIs, but it does require using only the provided support corpus and avoiding outside knowledge or live web answers.
+
+Actions:
+* Read problem_statement.md
+* Read evalutation_criteria.md
+* Read README.md
+* Updated shared transcript log
+
+Context:
+tool=GitHub Copilot
+branch=main
+repo_root=C:\Users\ism\Desktop\hackerrank-orchestrate-may26
+worktree=main
+parent_agent=none
+## [2026-05-01T21:22:57.7640850+05:00] Deleted debug-only scripts
+
+User Prompt (verbatim, secrets redacted):
+i think these files can be deleted and it will not effect anything
+
+Agent Response Summary:
+Confirmed the two debug helper scripts were unused, deleted them, and verified there were no repo references or documentation links that depended on them.
+
+Actions:
+* Deleted code/debug_agent.py
+* Deleted code/debug_search.py
+* Verified no references remain in the workspace
+* Updated shared transcript log
+
+Context:
+tool=GitHub Copilot
+branch=main
+repo_root=C:\Users\ism\Desktop\hackerrank-orchestrate-may26
+worktree=main
+parent_agent=none
+## [2026-05-01T21:28:48.2533846+05:00] Validate tmp_output row
+
+User Prompt (verbatim, secrets redacted):
+i asked this question:
+Issue,Subject,Company
+"I notice that people I assigned the test in October of 2025 have not received new tests. How long do the tests stay active in the system.",Test Active in the system,HackerRank
+
+
+kindly check the below answer is wrong or right?
+status,product_area,response,justification,request_type
+replied,Hackerrank / General Help,"Here is the relevant HackerRank guidance: You can now assess candidates by adding Azure hands-on questions from the HackerRank library to your tests. With this new Cloud skill offering, candidates can complete tasks directly in the Azure Portal using a temporary account provided by HackerRank. For example, they might be asked to set up a Virtual Network and configure Network Security Groups or host a website using Azure Web Apps. Once completed, their work is automatically scored and logged in the test report.",Matched the ticket to hackerrank/general-help/release-notes/1189675016-october-2024-release-notes.md in the provided corpus and answered from that article.,product_issue
+
+Agent Response Summary:
+Verified the output row is wrong because it answers an unrelated release-notes topic, while the corpus contains a direct test-expiration article saying tests remain active only during the configured start/end window and expire afterward.
+
+Actions:
+* Read supporting HackerRank docs in data/
+* Compared generated row to the actual ticket intent
+* Updated shared transcript log
+
+Context:
+tool=GitHub Copilot
+branch=main
+repo_root=C:\Users\ism\Desktop\hackerrank-orchestrate-may26
+worktree=main
+parent_agent=none
+## [2026-05-01T21:31:13.0868663+05:00] Fixed HackerRank test-expiration routing
+
+User Prompt (verbatim, secrets redacted):
+bro correct the agent not draf the row
+
+Agent Response Summary:
+Added a direct routing hint for HackerRank test-expiration questions so the agent now selects the modify-test-expiration article instead of a release-notes page for tickets asking how long tests stay active.
+
+Actions:
+* Edited code/agent.py
+* Validated the same ticket through the agent
+* Updated shared transcript log
+
+Context:
+tool=GitHub Copilot
+branch=main
+repo_root=C:\Users\ism\Desktop\hackerrank-orchestrate-may26
+worktree=main
+parent_agent=none
+## [2026-05-01T21:33:12.6241039+05:00] Confirm agent is retrieval-based
+
+User Prompt (verbatim, secrets redacted):
+ohh, so it just answer the question from thee already stored answers. am i right?
+
+Agent Response Summary:
+Confirmed the agent is purely retrieval-based: it searches the local corpus, finds the best matching article, and returns an excerpt from that article without generating new answers or calling external APIs.
+
+Actions:
+* Updated shared transcript log
+
+Context:
+tool=GitHub Copilot
+branch=main
+repo_root=C:\Users\ism\Desktop\hackerrank-orchestrate-may26
+worktree=main
+parent_agent=none
+## [2026-05-01T21:34:06.9396433+05:00] Discuss LLM-based retrieval approach
+
+User Prompt (verbatim, secrets redacted):
+what if we feed this data folder to AI and ask ai to find the question
+
+Agent Response Summary:
+Discussed the tradeoffs between the current TF-IDF retrieval and an LLM-based approach: LLM would be more semantic and flexible but would break determinism, require API keys, risk hallucination, and slow down the agent.
+
+Actions:
+* Updated shared transcript log
+
+Context:
+tool=GitHub Copilot
+branch=main
+repo_root=C:\Users\ism\Desktop\hackerrank-orchestrate-may26
+worktree=main
+parent_agent=none

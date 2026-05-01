@@ -69,6 +69,11 @@ TEMPLATE_HINTS = [
         "general-help/additional-resources/6477583642-ensuring-a-great-candidate-experience.md",
     ),
     (
+        ("stay active", "active in the system", "how long do the tests stay active", "test active", "test expiration", "expire automatically"),
+        "HackerRank",
+        "screen/managing-tests/2979262079-modify-test-expiration-time.md",
+    ),
+    (
         ("reschedule", "reinvit", "add time", "extra time", "accommodation"),
         "HackerRank",
         "screen/managing-tests/4811403281-adding-extra-time-for-candidates.md",
